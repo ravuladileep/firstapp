@@ -8,7 +8,18 @@ import { Component, OnInit } from '@angular/core';
 export class DatabindingComponent implements OnInit {
    public mytitle = 'simple text using string interpolation';
    buttonstatus = false;
-   public name;
+   successClass = 'text-success';
+   hasError = true;
+   multipleclasses = {
+    'text-success' : !this.hasError,
+    'text-danger' : this.hasError
+   };
+   multiplestyles = {
+    color : 'blue',
+    fontSize : '30px',
+    fontStyle : 'italic'
+   };
+   public name: any;
   constructor() { }
 
   ngOnInit() {

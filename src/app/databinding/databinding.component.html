@@ -8,3 +8,13 @@
 <h3>Twoway binding</h3>
 <input type="text" class="form-control col-md-6  text-success" [(ngModel)]="name">
 <h3>{{name}}</h3>
+
+<h3>class binding</h3>
+<h6 class='successClass'>simple text using normal class binding</h6>
+<h6 [class]='successClass'>simple text using angular [class]</h6>
+in the presence of angular class. normal  class value not applicable
+<h6 [ngClass]='multipleclasses'>multiple classes</h6>
+<br><br>
+<h3>using condition style binding</h3>
+<h6 [style.color]="hasError ? 'red':'green'">simplee text</h6>
+<h6 [ngStyle]="multiplestyles">multiple styles</h6>
