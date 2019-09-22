@@ -1,0 +1,10 @@
+<h1>Title:{{mytitle}}</h1>
+<button disabled="{{buttonstatus}}">stringinterpolate binding</button><br>
+<button [disabled]="buttonstatus">propertybinding</button>
+<br><br>
+<h3>if you click on the button the title will change</h3>
+<h3>this binding is for view to component</h3>
+<button (click)="changetitle()">Event binding</button>
+<h3>Twoway binding</h3>
+<input type="text" class="form-control col-md-6  text-success" [(ngModel)]="name">
+<h3>{{name}}</h3>

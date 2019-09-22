@@ -1,0 +1,25 @@
+<h3>Types of Directives</h3>
+<h6>structural directives ngfor</h6>
+<table class="table col-md-6 table-bordered table-hover table-success text-center">
+  <tr>
+    <th>id</th>
+    <th>name</th>
+    <th>dob</th>
+    <th>age</th>
+  </tr>
+  <tr *ngFor="let user of users">
+    <td>{{user.id}}</td>
+    <td>{{user.name}}</td>
+    <td>{{user.dob|date:'dd/MM/yyyy'}}</td>
+    <td>{{user.dob|age}}</td>
+  </tr>
+</table>
+<h3>ngif directive</h3>
+<h3>age coloumn is from custom pipe</h3>
+<div *ngIf='isconditionok; else notok'>
+  <h2>Iam coming from if block</h2>
+</div>
+<ng-template #notok>
+  <h3>I'm coming from else block</h3>
+</ng-template>
+
